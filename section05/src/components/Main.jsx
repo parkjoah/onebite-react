@@ -1,10 +1,20 @@
+import "./Main.css";
+
 const Main = () => {
-  const number = 10;
+  const user = {
+    name: "박조아",
+    isLongin: false,
+  };
   return (
-    <main>
-      <h1>Main</h1>
-      <h2>{number + 10}</h2>
-    </main>
+    <>
+      {user.isLongin ? (
+        <div style={{ backgroundColor: "red", borderBottom: "5px solid blue" }}>
+          로그아웃
+        </div>
+      ) : (
+        <div className="login">로그인</div>
+      )}
+    </>
   );
 };
 
