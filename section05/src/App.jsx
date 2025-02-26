@@ -1,17 +1,18 @@
 import { use } from "react";
 import "./App.css";
-import Bulb from "./components/Bulb";
-import Counter from "./components/Counter";
+// import Bulb from "./components/Bulb";
+// import Counter from "./components/Counter";
 // import Header from "./components/Header";
 // import Main from "./components/Main";
 // import Footer from "./components/Footer";
 // import Button from "./components/Button";
 
+import Register from "./components/Register";
+
 function App() {
   return (
     <>
-      <Bulb />
-      <Counter />
+      <Register />
     </>
   );
 }
@@ -50,6 +51,15 @@ export default App;
 //           <Header />
 //         </div>
 //       </Button>
+//     </>
+//   );
+// }
+
+// function App() {
+//   return (
+//     <>
+//       <Bulb />
+//       <Counter />
 //     </>
 //   );
 // }
