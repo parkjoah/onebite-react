@@ -1,4 +1,3 @@
-import { use } from "react";
 import "./App.css";
 // import Bulb from "./components/Bulb";
 // import Counter from "./components/Counter";
@@ -6,13 +5,14 @@ import "./App.css";
 // import Main from "./components/Main";
 // import Footer from "./components/Footer";
 // import Button from "./components/Button";
+// import Register from "./components/Register";
 
-import Register from "./components/Register";
+import HookExam from "./components/HookExam";
 
 function App() {
   return (
     <>
-      <Register />
+      <HookExam />
     </>
   );
 }
@@ -60,6 +60,14 @@ export default App;
 //     <>
 //       <Bulb />
 //       <Counter />
+//     </>
+//   );
+// }
+
+// function App() {
+//   return (
+//     <>
+//       <Register />
 //     </>
 //   );
 // }
