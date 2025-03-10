@@ -18,7 +18,7 @@ const mockData = [
     date: new Date().getTime(),
   },
   {
-    id: 0,
+    id: 2,
     isDone: false,
     content: "알바",
     date: new Date().getTime(),
@@ -37,14 +37,14 @@ function App() {
       date: new Date().getTime(),
     };
 
-    setTodos({ newTodo, ...todos });
+    setTodos([newTodo, ...todos]);
   };
   return (
     <>
       <div className="App">
         <Header />
         <Editor onCreate={onCreate} />
-        <List />
+        <List todos={todos} />
       </div>
     </>
   );
